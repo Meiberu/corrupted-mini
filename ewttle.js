@@ -117,7 +117,7 @@
   };
 
   var pixelCooler = function(i, d) {
-    d[i] = 50 + randInt(2, 50);
+    //d[i] = 50 + randInt(2, 50);
   };
 
   var glitchBlock = function(i, x, y) {
