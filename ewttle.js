@@ -12,7 +12,7 @@
     imgData,
     data,
       
-    pr = window.devicePixelRatio || 1,
+    pr = window.devicePixelRatio || 1, 
     w = window.innerWidth,
     h = window.innerHeight,
       
