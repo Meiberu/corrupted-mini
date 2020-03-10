@@ -55,7 +55,7 @@
 
       imgData = ctx.getImageData(0, 0, width, height);
 
-      imgData = pixelProcessor(imgData, 4, pixelCooler);
+      imgData = pixelProcessor(imgData, 7, pixelCooler);
 
       ctx.putImageData(imgData, 0, 0);
 
@@ -76,7 +76,7 @@
     currentFrame++;
 	
 	setInterval(styleBase, 500 + randInt(0-4500));
-	setInterval(styleEffects, 2500 + randInt(0-2500));
+	setInterval(styleEffects, 7500 + randInt(0-2500));
 	setInterval(styleInvert, 7500 + randInt(0-2500));
 	setInterval(styleColors, 7500 + randInt(0-2500));
 	
@@ -117,7 +117,8 @@
   };
 
   var pixelCooler = function(i, d) {
-    //d[i] = 50 + randInt(2, 50);
+    d[i] = 60;
+    d[i] += randInt(2, 15);
   };
 
   var glitchBlock = function(i, x, y) {
